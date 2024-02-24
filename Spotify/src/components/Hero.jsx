@@ -9,7 +9,7 @@ import { easeIn, motion } from 'framer-motion'
 const Hero = () => {
     return (
         <div className="relative h-[100vh] flex items-center justify-center overflow-hidden bg-top-left bg-[url('https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/main-home-slide-1a.jpg')] bg-no-repeat ">
-            <img src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/main-smoke.png" className="absolute h-full w-full z-[99999]" alt="" />
+            <img src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/main-smoke.png" className="absolute h-full w-full z-40" alt="" />
             <div className="  flex flex-col gap-10 items-center justify-center absolute w-full h-full backdrop-blur-sm  bg-[#0000009a]">
                 <div className='flex  items-center justify-center tilter'>
                     <motion.img initial={{ translateY: -1000 }} animate={{ translateY: 0 }}
@@ -40,6 +40,7 @@ const Hero = () => {
                     className='text-slate-50  text-lg w-1/2 text-center  tracking-wide font-normal italic'>Dive into a world of rhythm and harmony with our Music Player,
                     designed to deliver a seamless and personalized audio experience
                     tailored to your musical preferences</motion.div>
+              
             </div>
         </div>
     )
