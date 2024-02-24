@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import { addPlaylist } from "../../redux/slices/playlists"
@@ -21,7 +21,7 @@ const Player = () => {
         fetchPlaylists()
     }, [])
     return (
-        <div className="w-full bg-center h-[100vh] overflow-y-scroll bg-[url('https://preview.wolfthemes.live/app/uploads/sites/31/2019/11/joseph-young-IOzGybDmKR8-unsplash.jpg')]">
+        <div className="w-full bg-center  overflow-y-scroll bg-[url('https://preview.wolfthemes.live/app/uploads/sites/31/2019/11/joseph-young-IOzGybDmKR8-unsplash.jpg')]">
             <div className="w-full h-full backdrop-blur-sm bg-[#00000083]">
                 player
             </div>
