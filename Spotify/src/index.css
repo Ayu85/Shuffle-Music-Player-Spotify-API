@@ -7,10 +7,17 @@
     src: url('./Fonts/Helvetica Neue Condensed Bold.ttf');
 }
 
+@font-face {
+    font-family: lateral;
+    src: url('./Fonts/Takota-BRa8.ttf');
+}
+@font-face {
+    font-family: joy;
+    src: url('./Fonts/Rejouice-Headline.woff2');
+}
 @keyframes tilt {
     0% {
         transform: rotateY(0)
-
     }
 
     50% {
