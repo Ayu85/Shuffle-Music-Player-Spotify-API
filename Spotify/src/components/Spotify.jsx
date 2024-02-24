@@ -1,8 +1,8 @@
+import Hero from "./Hero"
+
 const Spotify = () => {
     return (
-        <div>
-            spotify
-        </div>
+        <Hero/>
     )
 }
 

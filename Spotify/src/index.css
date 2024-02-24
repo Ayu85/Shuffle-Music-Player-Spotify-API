@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: spotify;
+    src: url('./Fonts/Helvetica Neue Condensed Bold.ttf');
+}
