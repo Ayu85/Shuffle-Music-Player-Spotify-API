@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <div className="relative h-[100vh] flex items-center justify-center overflow-hidden bg-top-left bg-[url('https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/main-home-slide-1a.jpg')] bg-no-repeat ">
             <img src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/main-smoke.png" className="absolute h-full w-full z-[99999]" alt="" />
-            <div className="  flex flex-col gap-10 items-center justify-center absolute w-full h-full backdrop-blur-sm  bg-[#00000076]">
+            <div className="  flex flex-col gap-10 items-center justify-center absolute w-full h-full backdrop-blur-sm  bg-[#0000009a]">
                 <div className='flex  items-center justify-center tilter'>
                     <motion.img initial={{ translateY: -1000 }} animate={{ translateY: 0 }}
                         transition={{ duration: 1, ease: easeIn }}
