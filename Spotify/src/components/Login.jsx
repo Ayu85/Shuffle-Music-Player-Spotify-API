@@ -2,7 +2,7 @@
 const Login = () => {
     const connectAccount = () => {
         const CLIENT_ID = 'fe453b83029948e2953ca7baa149ea0f';
-        const REDIRECT_URL = 'http://localhost:5173/'
+        const REDIRECT_URL = 'http://localhost:5173'
         const API_URL = 'https://accounts.spotify.com/authorize'
         const scope = [
             "user-read-email",
