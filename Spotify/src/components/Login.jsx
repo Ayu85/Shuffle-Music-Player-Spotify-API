@@ -13,12 +13,13 @@ const Login = () => {
             "user-read-recently-played",
             "user-read-playback-position",
             "user-top-read",
-
         ]
+        window.location.href = `${API_URL}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL}&scope=
+        ${scope.join(" ")}&response_type=token&show_dialog=true`
     }
     return (
         <div>
-            <button>connect</button>
+            <button onClick={connectAccount}>connect</button>
         </div>
     )
 }
