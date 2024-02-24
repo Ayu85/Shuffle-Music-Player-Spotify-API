@@ -9,16 +9,16 @@
 
 @keyframes tilt {
     0% {
-        transform: rotateZ(0deg);
+        transform: rotateY(0)
 
     }
 
     50% {
-        transform: rotateZ(40deg);
+        transform: rotateY(20deg);
     }
 
     100% {
-        transform: rotateZ(0deg);
+        transform: rotateY(0deg);
     }
 }
 
