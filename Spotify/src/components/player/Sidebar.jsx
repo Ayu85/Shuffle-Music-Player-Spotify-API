@@ -9,7 +9,7 @@ const Sidebar = () => {
     const playlist = useSelector(store => store.playlist.value)
     console.log("pl", playlist);
     return (
-        <div className="w-80 h-full flex flex-col gap-5 bg-black text-white overflow-y-scroll">
+        <div className="w-80 h-[100vh]  flex flex-col gap-5 bg-black text-white overflow-y-scroll">
             <div className="flex items-center text-4xl font-[lateral] tracking-wider capitalize gap-3 pl-3 pt-3"><SiMusicbrainz className="text-7xl" /><h1>Shuffle</h1></div>
             <div className="border-b border-b-slate-400 pb-4">
                 <ul className="flex flex-col   pt-3">
