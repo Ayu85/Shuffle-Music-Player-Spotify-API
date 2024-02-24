@@ -1,3 +1,4 @@
 export const CLIENT_ID = 'fe453b83029948e2953ca7baa149ea0f';
 export const REDIRECT_URL = 'http://localhost:5173/'
 export const CLIENT_SECRET = '7886754642ea46dc8661a7bd3e463151'
+export const ACCESS_TOKEN = 'BQB08ZoEPxGRRKNSkofoEeHrPuJSRDDcvyTHkd92P5b3calDKmj_hE9FDxT1jWvtrlVujYq6Syf4hBP4zP6oo2qI_ejDNd2tYjQdT5RzbuVHFS2LB9MnuZ-XiIHNV0Gc5TLLTZlCKqcTM1xk3fDacSLChAHJdjQf3BY8Nf0LiONvCb-bYsi7mOJp-SftsA6NLmcug6Nj5gDZRsRUxk3Bsqx6_3IC7FkQWRdG'
