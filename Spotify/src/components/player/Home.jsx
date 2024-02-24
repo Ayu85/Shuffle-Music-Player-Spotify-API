@@ -2,7 +2,7 @@ import Sidebar from "./Sidebar"
 
 const Home = () => {
     return (
-        <div>
+        <div className="h-[100vh]">
             <Sidebar/>
         </div>
     )
