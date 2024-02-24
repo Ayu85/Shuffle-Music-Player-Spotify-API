@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import { addPlaylist } from "../../redux/slices/playlists"
 const Player = () => {
-    const [playLists, setPlaylists] = useState(null)
     const token = useSelector(store => store.access_token.value)
     const dispatch = useDispatch()
     useEffect(() => {
@@ -19,7 +18,7 @@ const Player = () => {
             console.log(data);
             dispatch(addPlaylist(data?.data))
         }
-        // fetchPlaylists()
+        //  fetchPlaylists()
     }, [])
     return (
         <div className="w-full bg-center h-full bg-[url('https://preview.wolfthemes.live/app/uploads/sites/31/2019/11/joseph-young-IOzGybDmKR8-unsplash.jpg')]">
