@@ -3,7 +3,7 @@ import store from './redux/store';
 import { Provider } from 'react-redux';
 import LocomotiveScroll from 'locomotive-scroll';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from './components/Home'
+import Home from './components/player/Home'
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   const approute = createBrowserRouter([
