@@ -1,8 +1,11 @@
 import Hero from "./Hero"
+import Latest from "./Latest"
 
 const Spotify = () => {
     return (
-        <Hero/>
+        <> <Hero />
+            <Latest />
+        </>
     )
 }
 
