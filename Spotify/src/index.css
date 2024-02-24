@@ -6,3 +6,22 @@
     font-family: spotify;
     src: url('./Fonts/Helvetica Neue Condensed Bold.ttf');
 }
+
+@keyframes tilt {
+    0% {
+        transform: rotateZ(0deg);
+
+    }
+
+    50% {
+        transform: rotateZ(40deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.tilter {
+    animation: tilt 5s linear infinite;
+}
