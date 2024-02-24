@@ -1,10 +1,12 @@
 import Login from './Login'
 import { addToken } from '../redux/slices/token';
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import Spotify from './Spotify';
 
 const Body = () => {
-   const dispatch = useDispatch()
+  const dispatch = useDispatch()
+  const token = useSelector(store => store.access_token.value)
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
@@ -13,9 +15,7 @@ const Body = () => {
       console.log(token);
     }
   }, [])
-  return (
-    <Login />
-  )
+  return token ? <Spotify /> : <Login />
 }
 
 export default Body
