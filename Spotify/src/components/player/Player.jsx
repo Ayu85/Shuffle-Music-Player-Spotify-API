@@ -1,7 +1,8 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useSelector } from 'react-redux'
 import axios from 'axios'
 const Player = () => {
+    const [playLists, setPlaylists] = useState(null)
     const token = useSelector(store => store.access_token.value)
     useEffect(() => {
         const fetchPlaylists = async () => {
@@ -14,6 +15,7 @@ const Player = () => {
                 }
             );
             console.log(data);
+            setPlaylists(data?.data)
         }
         fetchPlaylists()
     }, [])
