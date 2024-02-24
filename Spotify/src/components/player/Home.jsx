@@ -3,7 +3,7 @@ import Sidebar from "./Sidebar"
 
 const Home = () => {
     return (
-        <div className=" flex overflow-visible">
+        <div className="  flex ">
             <Sidebar/>
             <Player/>
         </div>
