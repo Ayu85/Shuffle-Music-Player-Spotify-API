@@ -1,8 +1,9 @@
+import Sidebar from "./Sidebar"
 
 const Home = () => {
     return (
         <div>
-            player home
+            <Sidebar/>
         </div>
     )
 }
