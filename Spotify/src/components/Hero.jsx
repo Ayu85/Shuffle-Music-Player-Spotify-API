@@ -35,9 +35,11 @@ const Hero = () => {
                         src={e} alt="" className={` w-52 -ml-5 aspect-square`} />
 
                 </div>
-                <div className='text-slate-50 text-lg w-1/2 text-center  tracking-wide font-normal italic'>Dive into a world of rhythm and harmony with our Music Player,
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 100 }}
+                    transition={{ duration: 1, delay: 2 }}
+                    className='text-slate-50  text-lg w-1/2 text-center  tracking-wide font-normal italic'>Dive into a world of rhythm and harmony with our Music Player,
                     designed to deliver a seamless and personalized audio experience
-                    tailored to your musical preferences</div>
+                    tailored to your musical preferences</motion.div>
             </div>
         </div>
     )
