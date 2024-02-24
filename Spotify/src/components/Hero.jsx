@@ -9,8 +9,8 @@ import { easeIn, motion } from 'framer-motion'
 const Hero = () => {
     return (
         <div className="relative h-[100vh] flex items-center justify-center overflow-hidden bg-top-left bg-[url('https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/main-home-slide-1a.jpg')] bg-no-repeat ">
-            {/* <img src="https://preview.wolfthemes.live/app/uploads/sites/31/2019/11/neonbrand-MENIBa0eZeA-unsplash.jpg" className="absolute" alt="" /> */}
-            <div className="  flex  items-center justify-center absolute w-full h-full  backdrop-blur-sm bg-[#000000a8]">
+            <img src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/main-smoke.png" className="absolute h-full w-full z-[99999]" alt="" />
+            <div className="  flex  items-center justify-center absolute w-full h-full backdrop-blur-sm  bg-[#00000076]">
                 <div className='flex  items-center justify-center tilter'>
                     <motion.img initial={{ translateY: -1000 }} animate={{ translateY: 0 }}
                         transition={{ duration: 1, ease: easeIn }}
