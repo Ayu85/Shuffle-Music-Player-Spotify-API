@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { addSongs } from "../redux/slices/songs"
 
-const useSongs = (url) => {
+const useSongs = () => {
     const dispatch = useDispatch()
     const token = useSelector(store => store.access_token.value)
     const URL = useSelector(store => store.URL.value)
