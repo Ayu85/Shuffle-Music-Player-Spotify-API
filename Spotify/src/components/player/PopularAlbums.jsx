@@ -11,7 +11,7 @@ const PopularAlbums = () => {
   )
 }
 const AlbumCard = ({ images, label, name, release_date }) => {
-  return <div className='w-44 aspect-square bg-[#00000026] px-3 py-2  flex flex-col justify-center text-white'>
+  return <div className='w-44 cursor-pointer hover:bg-[#00000074] transition-all aspect-square bg-[#00000026] px-3 py-2  flex flex-col justify-center text-white'>
     <img src={images[1]?.url} alt="logo" className='h-32 ' />
     <h1 className='text-md font-[joy] line-clamp-1'>{name}</h1>
     <h1 className='text-sm'>{label}</h1>
