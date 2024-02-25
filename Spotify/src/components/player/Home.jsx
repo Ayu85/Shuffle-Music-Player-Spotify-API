@@ -4,8 +4,8 @@ import Sidebar from "./Sidebar"
 const Home = () => {
     return (
         <div className="  flex ">
-            <Sidebar/>
-            <Player/>
+            <Sidebar />
+            <Player />
         </div>
     )
 }
