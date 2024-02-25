@@ -1,8 +1,10 @@
 import axios from "axios"
 import { useEffect } from "react"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
+import { addSongs } from "../redux/slices/songs"
 
 const useSongs = () => {
+    const dispatch = useDispatch()
     const token = useSelector(store => store.access_token.value)
     useEffect(() => {
         const getSongs = async () => {
@@ -12,6 +14,7 @@ const useSongs = () => {
                     "Content-Type": "application/json"
                 }
             })
+            dispatch(addSongs(song?.data?.items))
             console.log(song);
         }
         getSongs()
