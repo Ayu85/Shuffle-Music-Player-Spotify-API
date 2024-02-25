@@ -1,7 +1,7 @@
 const PopularAlbums = () => {
   return (
     <div>
-      
+        
     </div>
   )
 }
