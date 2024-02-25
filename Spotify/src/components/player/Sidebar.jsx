@@ -5,6 +5,7 @@ import { SiMusicbrainz } from "react-icons/si";
 import { RiPlayList2Fill } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
 import { addURL } from '../../redux/slices/currentPlayUrl'
+import { addCurrentPlaylist } from "../../redux/slices/currentPlaylist";
 const Sidebar = () => {
     const playlist = useSelector(store => store.playlist.value)
     const dispatch = useDispatch()
@@ -30,6 +31,7 @@ const Sidebar = () => {
                             playlist?.playlists?.items?.map((list, key) => {
                                 return <li key={key} onClick={() => {
                                     dispatch(addURL(list?.tracks?.href))
+                                    dispatch(addCurrentPlaylist(list))
                                 }} className="flex hover:bg-[#0000008a] px-3
                              cursor-pointer transition-all duration-200 py-1 items-center 
                              gap-3 text-md font-semibold tracking-wide "><img src={list?.images[0]?.url} className="w-10" alt="" />{list?.name}</li>
