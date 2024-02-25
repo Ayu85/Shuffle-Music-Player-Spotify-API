@@ -20,11 +20,11 @@ const CurrentTrack = () => {
                 </div>
             </div>
             <div className='flex text-4xl gap-4 items-center'>
-                <TfiControlShuffle className='text-xl text-slate-500'/>
-                <IoPlaySkipBack className='text-2xl'/>
+                <TfiControlShuffle className='text-xl text-slate-500 cursor-pointer'/>
+                <IoPlaySkipBack className='text-2xl cursor-pointer'/>
                 <FaCirclePlay />
-                <IoPlaySkipForward className='text-2xl' />
-                <RiRepeat2Line className='text-xl text-slate-500'/>
+                <IoPlaySkipForward className='text-2xl cursor-pointer' />
+                <RiRepeat2Line className='text-xl text-slate-500 cursor-pointer'/>
 
             </div>
         </div>
