@@ -8,7 +8,7 @@ import { RiRepeat2Line } from "react-icons/ri";
 const CurrentTrack = () => {
     const track = useSelector(store => store.current_track.value)
     return (
-        <div className='bg-[#000000] flex justify-evenly text-white  sticky h-24  items-center pl-3 bottom-0 backdrop-blur-lg'>
+        <div className='bg-[#000000] flex justify-between px-20 text-white  sticky h-24  items-center bottom-0 backdrop-blur-lg'>
             <div className='flex gap-3'>
                 <div>
                     <img src={track?.item?.album?.images[0]?.url} alt="" className='w-20' />
