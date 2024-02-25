@@ -3,10 +3,11 @@ import { LuSearch } from "react-icons/lu";
 import { MdLibraryBooks } from "react-icons/md";
 import { SiMusicbrainz } from "react-icons/si";
 import { RiPlayList2Fill } from "react-icons/ri";
-import { useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import { addURL } from '../../redux/slices/currentPlayUrl'
 const Sidebar = () => {
     const playlist = useSelector(store => store.playlist.value)
+    const dispatch = useDispatch()
     // console.log("pl", playlist);
     return (
         <div className=" w-80 h-[100vh] overflow-y-scroll  bg-top-left bg-[url('https://preview.wolfthemes.live/app/uploads/sites/31/2019/11/joseph-young-IOzGybDmKR8-unsplash.jpg')] ">
@@ -27,7 +28,9 @@ const Sidebar = () => {
 
                         {
                             playlist?.playlists?.items?.map((list, key) => {
-                                return <li key={key} className="flex hover:bg-[#0000008a] px-3
+                                return <li key={key} onClick={() => {
+                                    dispatch(addURL())
+                                }} className="flex hover:bg-[#0000008a] px-3
                              cursor-pointer transition-all duration-200 py-1 items-center 
                              gap-3 text-md font-semibold tracking-wide "><img src={list?.images[0]?.url} className="w-10" alt="" />{list?.name}</li>
                             })

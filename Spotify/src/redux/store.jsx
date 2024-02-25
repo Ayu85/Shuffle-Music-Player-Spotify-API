@@ -4,7 +4,7 @@ import playlists from './slices/playlists';
 import popular_albums from './slices/popular_albums';
 import songs from './slices/songs';
 import currentPlaylist from './slices/currentPlaylist';
-import currentURL from '../hooks/useCurrentPlayUrl';
+import currentURL from '../redux/slices/currentPlayUrl';
 const store = configureStore({
     reducer: {
         access_token: token,
