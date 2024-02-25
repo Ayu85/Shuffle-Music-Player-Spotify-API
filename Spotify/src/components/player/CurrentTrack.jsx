@@ -6,7 +6,7 @@ import { IoPlaySkipBack } from "react-icons/io5";
 const CurrentTrack = () => {
     const track = useSelector(store => store.current_track.value)
     return (
-        <div className='bg-[#000000] flex text-white  sticky h-24  items-center pl-3 bottom-0 backdrop-blur-lg'>
+        <div className='bg-[#000000] flex justify-evenly text-white  sticky h-24  items-center pl-3 bottom-0 backdrop-blur-lg'>
             <div className='flex gap-3'>
                 <div>
                     <img src={track?.item?.album?.images[0]?.url} alt="" className='w-20' />
@@ -17,10 +17,10 @@ const CurrentTrack = () => {
                     <h1></h1>
                 </div>
             </div>
-            <div>
+            <div className='flex text-4xl'>
+                <IoPlaySkipBack />
                 <FaCirclePlay />
                 <IoPlaySkipForward />
-                <IoPlaySkipBack />
 
             </div>
         </div>
