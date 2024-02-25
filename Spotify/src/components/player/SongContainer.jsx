@@ -16,12 +16,15 @@ const SongContainer = () => {
 }
 
 const Card = ({ track }) => {
-    return <div className="flex">
-        <img src={track?.album?.images[2].url} className="w-14" alt="logo" />
-        <div className="text-white">
-            <h1 className="font-semibold" >{track?.name}</h1>
-            <h1 className="text-slate-300">{track?.artists[1]?.name}</h1>
+    return <div className="flex justify-between px-10 ">
+        <div className="text-white flex gap-3">
+            <img src={track?.album?.images[2].url} className="w-14" alt="logo" />
+            <div className="flex flex-col">
+                <h1 className="font-semibold" >{track?.name}</h1>
+                <h1 className="text-slate-300">{track?.artists[1]?.name}</h1>
+            </div>
         </div>
+        <h1 className="text-slate-300">{((track?.duration_ms / 1000) / 60).toFixed(2)}</h1>
     </div>
 }
 export default SongContainer
