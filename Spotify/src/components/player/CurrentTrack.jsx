@@ -2,6 +2,8 @@ import { useSelector } from 'react-redux'
 import { FaCirclePlay } from "react-icons/fa6";
 import { IoPlaySkipForward } from "react-icons/io5";
 import { IoPlaySkipBack } from "react-icons/io5";
+import { TfiControlShuffle } from "react-icons/tfi";
+import { RiRepeat2Line } from "react-icons/ri";
 
 const CurrentTrack = () => {
     const track = useSelector(store => store.current_track.value)
@@ -17,10 +19,12 @@ const CurrentTrack = () => {
                     <h1></h1>
                 </div>
             </div>
-            <div className='flex text-4xl'>
-                <IoPlaySkipBack />
+            <div className='flex text-4xl gap-4 items-center'>
+                <TfiControlShuffle className='text-xl text-slate-500'/>
+                <IoPlaySkipBack className='text-2xl'/>
                 <FaCirclePlay />
-                <IoPlaySkipForward />
+                <IoPlaySkipForward className='text-2xl' />
+                <RiRepeat2Line className='text-xl text-slate-500'/>
 
             </div>
         </div>
