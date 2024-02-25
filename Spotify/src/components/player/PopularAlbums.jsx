@@ -3,8 +3,10 @@ import { useSelector } from 'react-redux'
 const PopularAlbums = () => {
   const albums = useSelector(store => store.albums.value)
   return (
-    <div className=''>
-      <AlbumCard {...albums[0]} />
+    <div className='flex gap-4 pl-6 pt-4'>
+      {albums?.map((alb,key) => {
+        return <AlbumCard {...alb} key={key} />
+      })}
     </div>
   )
 }
