@@ -1,4 +1,6 @@
 import useCurrentTrack from "../../hooks/useCurrentTrack"
+import usePlaylist from "../../hooks/usePlaylist"
+import usePopularAlbums from "../../hooks/usePopularAlbums"
 import useSongs from "../../hooks/useSongs"
 import CurrentTrack from "./CurrentTrack"
 import Navbar from "./Navbar"
@@ -6,6 +8,8 @@ import PopularAlbums from "./PopularAlbums"
 import SongContainer from "./SongContainer"
 
 const Player = () => {
+    usePlaylist()
+    usePopularAlbums()
     useSongs()
     useCurrentTrack()
     return (

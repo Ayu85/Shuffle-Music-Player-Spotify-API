@@ -1,4 +1,8 @@
 import { useSelector } from 'react-redux'
+import { FaCirclePlay } from "react-icons/fa6";
+import { IoPlaySkipForward } from "react-icons/io5";
+import { IoPlaySkipBack } from "react-icons/io5";
+
 const CurrentTrack = () => {
     const track = useSelector(store => store.current_track.value)
     return (
@@ -12,6 +16,12 @@ const CurrentTrack = () => {
                     <h1 className='text-sm text-slate-400'>{track?.item?.album?.artists[0].name},{track?.item?.album?.artists[1]?.name}</h1>
                     <h1></h1>
                 </div>
+            </div>
+            <div>
+                <FaCirclePlay />
+                <IoPlaySkipForward />
+                <IoPlaySkipBack />
+
             </div>
         </div>
     )
