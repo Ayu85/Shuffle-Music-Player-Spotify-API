@@ -15,7 +15,7 @@ const SongContainer = () => {
                     <h1>{currentPlaylist?.description}</h1>
                 </div>
             </div>
-            <div className="flex flex-col gap-3" >
+            <div className="flex flex-col " >
                 {songs.map((song, key) => {
                     return <Card {...song} key={key} />
                 })}
@@ -25,7 +25,8 @@ const SongContainer = () => {
 }
 
 const Card = ({ track }) => {
-    return <div className="flex justify-between px-10 ">
+    return <div className="flex justify-between px-10 cursor-pointer
+     py-2 border-b border-b-[#0000003f] hover:bg-[#0000003f] transition-all ">
         <div className="text-white flex gap-3">
             <img src={track?.album?.images[2].url} className="w-14" alt="logo" />
             <div className="flex flex-col w-96">

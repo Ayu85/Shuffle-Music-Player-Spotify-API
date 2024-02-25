@@ -27,7 +27,7 @@ const Sidebar = () => {
 
                         {
                             playlist?.playlists?.items?.map((list, key) => {
-                                return <li key={key} className="flex hover:bg-slate-600 px-3
+                                return <li key={key} className="flex hover:bg-[#0000008a] px-3
                              cursor-pointer transition-all duration-200 py-1 items-center 
                              gap-3 text-md font-semibold tracking-wide "><img src={list?.images[0]?.url} className="w-10" alt="" />{list?.name}</li>
                             })
