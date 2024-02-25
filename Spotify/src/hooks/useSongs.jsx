@@ -15,7 +15,7 @@ const useSongs = () => {
                 }
             })
             dispatch(addSongs(song?.data?.items))
-            console.log(song);
+            // console.log(song);
         }
         getSongs()
     }, [])

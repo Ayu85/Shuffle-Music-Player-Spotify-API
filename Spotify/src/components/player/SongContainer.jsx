@@ -5,7 +5,14 @@ const SongContainer = () => {
     const songs = useSelector(store => store.songs.value)
     return (
         <div>
-            <h1>Songs</h1>
+            <div>
+                <div>
+            
+                </div>
+                <div>
+
+                </div>
+            </div>
             <div className="flex flex-col gap-3" >
                 {songs.map((song, key) => {
                     return <Card {...song} key={key} />
