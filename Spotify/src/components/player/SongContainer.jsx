@@ -3,11 +3,12 @@ import { useSelector } from "react-redux"
 
 const SongContainer = () => {
     const songs = useSelector(store => store.songs.value)
+    const currentPlaylist = useSelector(store => store.current_playlist.value)
     return (
         <div>
             <div>
                 <div>
-            
+                    <img src={currentPlaylist?.images[0]?.url} alt="" />
                 </div>
                 <div>
 
