@@ -1,5 +1,6 @@
 import Navbar from "./Navbar"
 import PopularAlbums from "./PopularAlbums"
+import SongContainer from "./SongContainer"
 
 const Player = () => {
 
@@ -8,6 +9,7 @@ const Player = () => {
             <div className="w-full h-full backdrop-blur-sm bg-[#00000083]">
                 <Navbar />
                 <PopularAlbums/>
+                <SongContainer/>
             </div>
         </div>
     )
