@@ -6,12 +6,13 @@ const SongContainer = () => {
     const currentPlaylist = useSelector(store => store.current_playlist.value)
     return (
         <div>
-            <div>
+            <div className="flex justify-between items-center px-10 mb-10 mt-10 bg-[#0000008a] py-10">
                 <div>
                     <img src={currentPlaylist?.images[0]?.url} alt="" />
                 </div>
-                <div>
-
+                <div className="text-white font-[joy]">
+                    <h1 className="text-4xl font-semibold tracking-wide">{currentPlaylist?.name}</h1>
+                    <h1>{currentPlaylist?.description}</h1>
                 </div>
             </div>
             <div className="flex flex-col gap-3" >
