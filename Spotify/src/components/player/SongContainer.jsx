@@ -25,6 +25,7 @@ const Card = ({ track }) => {
             </div>
         </div>
         <h1 className="text-slate-300">{((track?.duration_ms / 1000) / 60).toFixed(2)}</h1>
+        <h1 className="text-slate-300">{((track?.album?.release_date))}</h1>
     </div>
 }
 export default SongContainer
