@@ -15,11 +15,13 @@ const SongContainer = () => {
     )
 }
 
-const Card = ({ track}) => {
+const Card = ({ track }) => {
     return <div className="flex">
         <img src={track?.album?.images[2].url} className="w-14" alt="logo" />
-        <h1 className="text-white">{track?.name}</h1>
-        <h1></h1>
+        <div className="text-white">
+            <h1 className="font-semibold" >{track?.name}</h1>
+            <h1 className="text-slate-300">{track?.artists[1]?.name}</h1>
+        </div>
     </div>
 }
 export default SongContainer
