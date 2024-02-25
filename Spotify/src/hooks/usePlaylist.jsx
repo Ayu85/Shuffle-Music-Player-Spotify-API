@@ -15,7 +15,7 @@ const usePlaylist = () => {
                     },
                 }
             );
-            console.log(data);
+            // console.log(data);
             dispatch(addPlaylist(data?.data))
         }
         fetchPlaylists()

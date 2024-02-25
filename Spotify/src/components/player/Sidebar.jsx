@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 const Sidebar = () => {
     const playlist = useSelector(store => store.playlist.value)
-    console.log("pl", playlist);
+    // console.log("pl", playlist);
     return (
         <div className=" w-80 h-[100vh] overflow-y-scroll  bg-top-left bg-[url('https://preview.wolfthemes.live/app/uploads/sites/31/2019/11/joseph-young-IOzGybDmKR8-unsplash.jpg')] ">
             <div className=" flex flex-col gap-5  text-white bg-[#00000083] backdrop-blur-md  ">
