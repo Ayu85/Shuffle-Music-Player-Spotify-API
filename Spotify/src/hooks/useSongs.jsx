@@ -19,7 +19,7 @@ const useSongs = () => {
             // console.log(song);
         }
         getSongs()
-    }, [])
+    }, [URL])
 }
 
 export default useSongs
