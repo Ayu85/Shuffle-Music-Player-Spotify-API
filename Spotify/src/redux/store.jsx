@@ -5,7 +5,7 @@ import popular_albums from './slices/popular_albums';
 import songs from './slices/songs';
 import currentPlaylist from './slices/currentPlaylist';
 import currentURL from '../redux/slices/currentPlayUrl';
-import CurrentTrack from '../components/player/CurrentTrack';
+import currentTrack from './slices/currentTrack';
 const store = configureStore({
     reducer: {
         access_token: token,
@@ -14,7 +14,7 @@ const store = configureStore({
         songs: songs,
         current_playlist: currentPlaylist,
         URL: currentURL,
-        current_track: CurrentTrack
+        current_track: currentTrack
     }
 })
 export default store;
